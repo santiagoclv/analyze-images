@@ -18,3 +18,9 @@ tutorial-env\Scripts\activate.bat
 source tutorial-env/bin/activate
 
 ```
+
+## Pillow - handle and modify images and stufff
+
+## Tesseract - OCV lib to process text on images
+
+## OpenCV - Kraken - NumPy

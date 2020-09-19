@@ -1,6 +1,6 @@
 
 # The Project #
-1. This is a project with minimal scaffolding. Expect to use the the discussion forums to gain insights! It’s not cheating to ask others for opinions or perspectives!
+1. This is a project with minimal scaffolding. Expect to use the discussion forums to gain insights! It’s not cheating to ask others for opinions or perspectives!
 2. Be inquisitive, try out new things.
 3. Use the previous modules for insights into how to complete the functions! You'll have to combine Pillow, OpenCV, and Pytesseract
 4. There are hints provided in Coursera, feel free to explore the hints if needed. Each hint provide progressively more details on how to solve the issue. This project is intended to be comprehensive and difficult if you do it without the hints.
@@ -16,7 +16,6 @@ If I were to use the [images.zip](./readonly/images.zip) file and search for "Ma
 ![Mark Search](./readonly/large_project.png)
 
 Note: That big file can take some time to process - for me it took nearly ten minutes! Use the small one for testing.
-
 
 ```python
 import zipfile

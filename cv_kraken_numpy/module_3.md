@@ -301,7 +301,7 @@ display(show_boxes(i))
 # First we will import the open cv package cv2 
 import cv2 as cv
 # We'll load the floyd.jpg image 
-img = cv.imread('readonly/floyd.jpg')
+img = cv.imread('floyd.jpg')
 # And we'll convert it to grayscale using the cvtColor image
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 

@@ -2,16 +2,11 @@ from PIL import Image
 import pytesseract
 import string
 
-image=Image.open('readonly/storefront.jpg')
+image=Image.open('storefront.jpg')
 
 bounding_box=(900, 420, 940, 445)
 little_sign=image.crop(bounding_box)
 new_size=(little_sign.width*10,little_sign.height*10)
-
-options=[Image.NEAREST, Image.BOX, Image.BILINEAR, Image.HAMMING, Image.BICUBIC, Image.LANCZOS]
-for option in options:
-    print(option)
-    little_sign.resize( new_size, option).show()
 
 bigger_sign=little_sign.resize(new_size, Image.BICUBIC)
 
@@ -26,7 +21,7 @@ def binarize(image_to_transform, threshold):
     return output_image
 
 eng_dict=[]
-with open ("readonly/words_alpha.txt", "r") as f:
+with open ("words_alpha.txt", "r") as f:
     data=f.read()
     eng_dict=data.split("\n")
 

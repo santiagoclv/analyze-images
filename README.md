@@ -23,4 +23,4 @@ source tutorial-env/bin/activate
 
 ## Tesseract - OCV lib to process text on images
 
-## OpenCV - Kraken - NumPy
+## OpenCV - Kraken - NumPy - 

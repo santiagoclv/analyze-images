@@ -2,7 +2,7 @@ FROM python:3
 
 WORKDIR /usr/src/app
 COPY ./ /usr/src/app
-RUN apt-get update ##[edited]
+RUN apt-get update
 RUN apt-get install 'ffmpeg'\
     'libsm6'\ 
     'tesseract-ocr'\ 

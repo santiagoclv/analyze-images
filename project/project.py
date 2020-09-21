@@ -5,7 +5,7 @@ import cv2 as cv
 import numpy as np
 
 # loading the face detection classifier
-face_cascade = cv.CascadeClassifier('readonly/haarcascade_frontalface_default.xml')
+face_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 def get_faces_sheet(faces, image_file):
     original_image = Image.open(image_file).convert("RGB")
@@ -26,7 +26,7 @@ analized_pages = []
 
 print('Wait while the images are processed...')
 
-with ZipFile('readonly/small_img.zip') as image_zip:
+with ZipFile('small_img.zip') as image_zip:
     for image_name in image_zip.namelist():
         with image_zip.open(image_name) as image_file:
             pic = Image.open(image_file).convert("L")
@@ -43,12 +43,12 @@ while True:
     response = input(input_message)
 
     if response != "quit":
-        print('Results found for word ${} \n').format(response)
+        print('Results found for word ${} \n'.format(response))
         for page in analized_pages:
             if response in page["text"]:
-                print('Results found in file ${} \n').format(page["image_name"])
-                display(page["faces"])
+                print('Results found in file ${} \n'.format(page["image_name"]))
+                page["faces"]
             else:
-                print('No results found in file ${} \n').format(page["image_name"])
+                print('No results found in file ${} \n'.format(page["image_name"]))
     else: 
         break
